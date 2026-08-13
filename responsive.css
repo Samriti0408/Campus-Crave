@@ -1,0 +1,174 @@
+/* ===============================
+   Campus Crave Responsive Design
+================================= */
+
+/* Tablet Devices */
+
+@media screen and (max-width:992px){
+
+header{
+    flex-direction:column;
+    padding:20px;
+}
+
+nav{
+    margin-top:15px;
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:15px;
+}
+
+.hero{
+    flex-direction:column;
+    text-align:center;
+}
+
+.hero-text{
+    margin-bottom:30px;
+}
+
+.hero-text h1{
+    font-size:42px;
+}
+
+.hero-image img{
+    width:90%;
+}
+
+.food-container{
+    grid-template-columns:repeat(2,1fr);
+}
+
+.about-container{
+    grid-template-columns:repeat(2,1fr);
+}
+
+.contact-container{
+    grid-template-columns:1fr;
+}
+
+.cart-table{
+    display:block;
+    overflow-x:auto;
+}
+
+}
+
+/* Mobile Devices */
+
+@media screen and (max-width:768px){
+
+.logo{
+    font-size:24px;
+}
+
+nav{
+    flex-direction:column;
+    align-items:center;
+}
+
+nav a{
+    margin:8px 0;
+}
+
+.hero{
+    padding:120px 20px 50px;
+}
+
+.hero-text h1{
+    font-size:34px;
+}
+
+.hero-text p{
+    font-size:16px;
+}
+
+.hero button{
+    width:100%;
+}
+
+.food-container{
+    grid-template-columns:1fr;
+}
+
+.about-container{
+    grid-template-columns:1fr;
+}
+
+.contact-container{
+    grid-template-columns:1fr;
+}
+
+.card img{
+    height:200px;
+}
+
+#search{
+    width:100%;
+}
+
+.cart-page{
+    padding:100px 15px;
+}
+
+.cart-table{
+    font-size:14px;
+}
+
+.login-box{
+    width:95%;
+    padding:25px;
+}
+
+.contact-form,
+.contact-info{
+    padding:20px;
+}
+
+iframe{
+    height:250px;
+}
+
+footer{
+    font-size:14px;
+}
+
+}
+
+/* Small Mobile */
+
+@media screen and (max-width:480px){
+
+.hero-text h1{
+    font-size:28px;
+}
+
+.hero-text p{
+    font-size:15px;
+}
+
+.menu h2,
+.about-page h1,
+.contact-page h1{
+    font-size:30px;
+}
+
+.card{
+    margin:10px 0;
+}
+
+.card button{
+    width:90%;
+}
+
+.contact-form button{
+    width:100%;
+}
+
+.bill button{
+    width:100%;
+    margin-top:15px;
+}
+
+}

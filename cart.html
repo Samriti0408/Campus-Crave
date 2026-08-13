@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Campus Crave | Cart</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+
+    <header>
+
+        <div class="logo">
+            <i class="fa-solid fa-utensils"></i>
+            Campus Crave
+        </div>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="menu.html">Menu</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+            <a href="cart.html" class="active">Cart</a>
+        </nav>
+
+    </header>
+
+    <!-- Cart Section -->
+
+    <section class="cart-page">
+
+        <h1>Your Shopping Cart</h1>
+
+        <table class="cart-table">
+
+            <thead>
+
+                <tr>
+
+                    <th>Food Item</th>
+
+                    <th>Price</th>
+
+                    <th>Quantity</th>
+
+                    <th>Total</th>
+
+                    <th>Action</th>
+
+                </tr>
+
+            </thead>
+
+            <tbody id="cartTable">
+
+            </tbody>
+
+        </table>
+
+        <div class="bill">
+
+            <h2>Total Amount : ₹<span id="grandTotal">0</span></h2>
+            <div class="delivery-section">
+
+    <h2>Delivery Details</h2>
+
+    <input type="text" id="name" placeholder="👤 Student Name" required>
+
+    <input type="text" id="roll" placeholder="🎓 Roll Number" required>
+
+    <select id="block">
+        <option value="">🏢 Select Block</option>
+        <option>Block 3</option>
+        <option>Block 5</option>
+        <option>Block 7</option>
+        <option>Girls Hostel</option>
+        <option>Boys Hostel</option>
+        <option>Library</option>
+    </select>
+
+    <input type="tel" id="phone" placeholder="📞 Mobile Number">
+
+    <textarea id="address" placeholder="📍 Full Delivery Address"></textarea>
+
+    <label><b>Payment Method</b></label><br>
+
+    <input type="radio" name="payment" value="Cash"> Cash on Delivery
+
+    <input type="radio" name="payment" value="UPI"> UPI
+
+    <input type="radio" name="payment" value="Card"> Card
+
+    <br><br>
+
+    <label><b>Delivery Time</b></label>
+
+    <select id="time">
+        <option>As Soon As Possible</option>
+        <option>After 15 Minutes</option>
+        <option>After 30 Minutes</option>
+        <option>After 1 Hour</option>
+    </select> 
+
+    <textarea id="note" placeholder="Special Instructions (Less Spicy, Extra Sauce etc.)"></textarea>
+
+
+</div>
+            
+
+            <button onclick="clearCart()">
+                Clear Cart
+            </button>
+
+            <button onclick="placeOrder()">
+                Place Order
+            </button>
+            <p id="orderMessage" style="display:none;
+        color:green; font-size:200px; margin-top:15px">
+        Thank you for ordering! Your orde has been placed successfully.</p>
+
+        </div>
+
+    </section>
+
+    <!-- Footer -->
+
+    <footer>
+
+        <p>
+            © 2026 Campus Crave | All Rights Reserved
+        </p>
+
+    </footer>
+
+    <script src="cart.js"></script>
+
+</body>
+
+</html>
